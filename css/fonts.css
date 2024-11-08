@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300&display=swap');
+
+.title, .button{
+    font-family: 'Montserrat';
+}
+
+.txt, .desc{
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.footer{
+    font-family: 'Montserrat';
+    color: #fff;
+}

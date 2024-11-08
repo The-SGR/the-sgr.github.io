@@ -3,9 +3,10 @@
     <head>
         <title>SGR Studios</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="window-conf.css">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="fonts.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/window-conf.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fonts.css">
         <link rel="apple-touch-icon" sizes="57x57" href="res/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="res/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="res/favicon/apple-icon-72x72.png">
@@ -23,6 +24,7 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="res/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <script src="js/snow.js"></script>
     </head>
     <body>
         <div id="page0">
@@ -69,14 +71,14 @@
 <style>
     html{
         background-image: url(res/refuge.jpg);
-        background-repeat: repeat-y;
-        background-size: cover;
     }
 
     .footer{
-        background-color: rgba(82, 9, 54, 0.75);
+        background-color: rgba(82, 9, 54, 0.9);
         background-image: none;
         color: #FF82A2;
+        backdrop-filter: blur(5px) saturate(100%);
+        -webkit-backdrop-filter: blur(16px) saturate(100%);
     }
 
     #list{
@@ -87,22 +89,22 @@
 
     #NikoHappy{
         position: absolute;
-        left: 85%;
-        bottom: 100%;
+        left: 100%;
         cursor: grab;
         -webkit-user-drag: none;
         opacity: 1;
         z-index: 0;
+        transform: translate(-100%, -100%);
     }
 
     #NikoAmazed{
         position: absolute;
-        left: 85%;
-        bottom: 100%;
+        left: 100%;
         cursor: grab;
         -webkit-user-drag: none;
         opacity: 0;
         z-index: 1;
+        transform: translate(-100%, -100%);
     }
 
     #NikoAmazed:hover{
