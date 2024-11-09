@@ -48,12 +48,19 @@
     user-select: none;
     text-align: center;
     position: absolute;
-    width: 750px;
+    width: 500px;
     height: 525px;
     left: 50%;
     margin-right: -50%;
-    margin-top: 17em;
+    margin-top: 20em;
     transform: translate(-50%, -50%);
+}
+
+@media (min-width: 800px){
+    #window-about{
+        width: 750px;
+        height: 450px;
+    }
 }
 
 #window-404{
