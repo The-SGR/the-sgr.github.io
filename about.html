@@ -44,20 +44,10 @@
                     <span class="sgr-f-txt"><span class="weight900">SGR</span></span><i class="small"> (aka сгр, сгруша)</i> — какой-то челик из Волгограда. <span class="small">UTC+3</span><br>
                     Умеет что-то делать на Python, Java, JavaScript, <span id="zabava"></span>, учит C++ и Cи<br>
                     Ещё умеет играть на аккордеоне и фортепиано, ведь уже 7-й год учится в муз. школе.<br>
-                    Кстати игры! Сгруша <i class="small">(почему я пишу о себе в 3-м лице?)</i> любит:
-                    <ul class="txt" id="glist">
-                        <li>Teardown</li>
-                        <li>Stormworks: Build & Rescue</li>
-                        <li>Geometry Dash</li>
-                        <li>Minecraft</li>
-                        <li>OneShot</li>
-                        <li>Hearts of Iron IV</li>
-                        <li>свою библиотеку в Steam</li>
-                    </ul><br>
-                    <p class="txt">
-                        За достойные референсы спасибо <a href="https://mctaylors.ru" target="_blank" class="darker">mctaylors</a> и <a href="https://github.com/az963258/az963258.github.io" target="_blank" class="darker">az963258</a>!<br>
-                        Также загляните в <a href="/social.html" class="bigger"><span class="sgr-f-txt">Social</span></a>!
-                    </p>
+                    Кстати игры! Сгруша <i class="small">(почему я пишу о себе в 3-м лице?)</i> любит:<br><br>
+                    Teardown, Stormworks, Geometry Dash, Minecraft, OneShot, Hearts of Iron IV, и свою библиотеку в Steam.<br><br>
+                    За достойные референсы спасибо <a href="https://mctaylors.ru" target="_blank" class="darker">mctaylors</a> и <a href="https://az963258.github.io" target="_blank" class="darker">az963258</a>!<br>
+                    Также загляните в <a href="/social.html" class="bigger"><span class="sgr-f-txt">Social</span></a>!
                 </p>
             </div>
             <div class="footer">
@@ -89,18 +79,13 @@
         -webkit-backdrop-filter: blur(16px) saturate(100%);
     }
 
-    #glist{
-        float: center;
-        font-size: 20px;
-        text-align: left;
-    }
-
     #NikoHappy{
         position: absolute;
         left: 100%;
         cursor: grab;
         -webkit-user-drag: none;
         opacity: 1;
+        visibility: visible;
         z-index: 0;
         transform: translate(-100%, -100%);
     }
@@ -117,6 +102,11 @@
 
     #NikoAmazed:hover{
         opacity: 1;
+    }
+
+    #NikoHappy:hover{
+        opacity: 0;
+        visibility: hidden;
     }
 
     #zabava::before{ content: "HTML/CSS"; }
