@@ -45,7 +45,7 @@
                     Умеет что-то делать на Python, Java, JavaScript, <span id="zabava"></span>, учит C++ и Cи<br>
                     Ещё умеет играть на аккордеоне и фортепиано, ведь уже 7-й год учится в муз. школе.<br>
                     Кстати игры! Сгруша <i class="small">(почему я пишу о себе в 3-м лице?)</i> любит:
-                    <ul class="txt" id="list">
+                    <ul class="txt" id="glist">
                         <li>Teardown</li>
                         <li>Stormworks: Build & Rescue</li>
                         <li>Geometry Dash</li>
@@ -70,7 +70,15 @@
 </html>
 <style>
     html{
-        background-image: url(res/refuge.jpg);
+        background-image: none;
+    }
+
+    html{
+        background: url(../res/refuge.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover; 
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     .footer{
@@ -81,7 +89,7 @@
         -webkit-backdrop-filter: blur(16px) saturate(100%);
     }
 
-    #list{
+    #glist{
         float: center;
         font-size: 20px;
         text-align: left;
