@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
     <head>
-        <title>SGR Studios</title>
+        <title>SGR Studios | About</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <link rel="stylesheet" href="css/window-conf.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fonts.css">
@@ -49,13 +49,13 @@
                     За достойные референсы спасибо <a href="https://mctaylors.ru" target="_blank" class="darker">mctaylors</a> и <a href="https://az963258.github.io" target="_blank" class="darker">az963258</a>!<br>
                     Также загляните в <a href="/social.html" class="bigger"><span class="sgr-f-txt">Social</span></a>!
                 </p>
+                <audio autoplay="autoplay" controls>
+                    <source src="res/self-contained-universe-reprise.ogg" type="audio/ogg">
+                </audio>
             </div>
             <div class="footer">
                 <img src="res/Niko_amazed.webp" alt="Niko Amazed" id="NikoAmazed">
                 <img src="res/Niko_happy.webp" alt="Niko Happy" id="NikoHappy">
-                <audio autoplay="autoplay" controls>
-                    <source src="res/self-contained-universe-reprise.ogg" type="audio/ogg">
-                </audio>
                 <p>SGR Studios 2021 - 2025</p>
             </div>
         </div>
@@ -83,11 +83,12 @@
     }
 
     audio{
-        position: fixed;
+        position: absolute;
         display: block;
-        left: auto;
-        right: 20px;
-        bottom: 20px;
+        top: 99%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         z-index: 999;
     }
 

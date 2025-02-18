@@ -90,9 +90,11 @@ a{
     user-select: none;
 }
 
-.navbar a {
+.navbar a, button {
     float: left;
     color: #f2f2f2;
+    background-color: transparent;
+    border-style: none;
     text-align: center;
     padding: 7px 10px;
     text-decoration: none;
@@ -111,7 +113,7 @@ a{
     font-size: 20px;
 }
 
-.navbar a:hover {
+.navbar a:hover, button:hover {
     background-color: rgba(242, 242, 242, 1);
     backdrop-filter: blur(10px) saturate(100%);
     -webkit-backdrop-filter: blur(21px) saturate(100%);
@@ -120,14 +122,56 @@ a{
     border-radius: 15px;
 }
 
-.navbar a:not(:hover) {
+.navbar a:not(:hover), button:not(:hover) {
     color: #f2f2f2;
     transition: 0.4s;
     border-radius: 15px;
 }
 
-@media (min-width: 800) {
+#dropbtn {
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#dropdown-content {
+    position: absolute;
+    background-color: #131212;
+    backdrop-filter: blur(10px) saturate(100%);
+    -webkit-backdrop-filter: blur(21px) saturate(100%);
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+.disp {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navbardrop {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 768px) {
     .navbarstandart {
         visibility: hidden;
+    }
+
+    .navbardrop {
+        visibility: visible;
+    }
+
+    .footer {
+        font-size: 10px;
+        height: 4%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .footer {
+        font-size: 10px;
+        height: 3%;
     }
 }
