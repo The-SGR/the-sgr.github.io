@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SGR Studios | About</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/window-conf.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="res/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="res/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="res/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="res/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="res/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="res/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="res/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="res/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="res/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="res/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
+    <link rel="manifest" href="res/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="res/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="title-font"><a href="index.html">SGR Studios</a><span class="newData">2021 - <span class="year"></span></span></h1>
+            <ul class="header_list">
+                <li><h2 class="title-font"><a href="about.html">About</a></h2></li>
+                <li><h2 class="title-font"><a href="maiclicker.html">Clicker</a></h2></li>
+            </ul>
+        </div>
+    </header>
+    <div id="about">
+        <img src="res/sgr.png" alt="sgr" id="sgr">
+        <div id="window-about">
+            <h1 class="title-font"><span class="gradient">Кто я?</span></h1>
+            <p class="txt">Я есть Господин Сгр. Какой-то челик из Нижнего Поволжья.<br>Я делаю игры, ПО и немножко сайты.<br><span class="gradient">C++ | Java | Python | JavaScript</span></p>
+        </div>
+    </div>
+    <div id="window-social">
+        <h1 class="title-font"><span class="gradient">Социальные сети</span></h1>
+        <h2 class="title-font"><a href="https://t.me/sgrtelegraph" target="_blank">[ Telegram Канал ]</a></h2><br>
+        <h2 class="title-font"><a href="https://youtube.com/@The-SGR" target="_blank">[ YouTube Канал ]</a></h2><br>
+        <h2 class="title-font"><a href="https://discord.gg/ttrNWzcTZM" target="_blank">[ Discord Сервер ]</a></h2>
+    </div>
+    <div id="window-github">
+        <h1 class="title-font"><span class="gradient">Проекты</span></h1>
+        <h2 class="title-font"><a href="https://github.com/The-SGR?tab=repositories" target="_blank">[ GitHub ]</a></h2>
+    </div>
+    <div class="footer">
+        <h1 class="title-font">SGR Studios<br>2021 - <span class="year"></span></h1>
+    </div>
+</body>
+</html>
+<style>
+    html {
+        background-image: none;
+    }
+
+    html {
+        background: url(res/refuge.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #about {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        margin-top: 9rem;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    #sgr {
+        height: 250px;
+        border-radius: 25px;
+        user-select: none;
+    }
+
+    .footer {
+        background-image: linear-gradient(-45deg, #520936, #730e4a);
+    }
+
+    .title-font a:hover {
+        color: #a11967;
+    }
+
+    a:after {
+        background-color: #a11967;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 1px;
+    }
+
+    @media (max-width: 425px) {
+        .txt {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 549px) {
+        .txt {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 870px) {
+        #sgr {
+            display: none;
+        }
+
+        #about {
+
+        }
+    }
+
+    @media (max-height: 950px) {
+        .footer {
+            display: none;
+        }
+
+        .newData {
+            display: block;
+        }
+    }
+
+</style>
+<script>
+    document.querySelectorAll('.year').forEach(element => {
+        element.textContent = new Date().getFullYear();
+    });
+</script>

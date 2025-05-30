@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SGR Studios | 404</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/window-conf.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="res/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="res/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="res/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="res/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="res/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="res/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="res/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="res/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="res/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="res/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
+    <link rel="manifest" href="res/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="res/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="title-font"><a href="index.html">SGR Studios</a><span class="newData">2021 - <span class="year"></span></span></h1>
+            <ul class="header_list">
+                <li><h2 class="title-font"><a href="about.html">About</a></h2></li>
+                <li><h2 class="title-font"><a href="maiclicker.html">Clicker</a></h2></li>
+            </ul>
+        </div>
+    </header>
+    <div id="window-404">
+        <h1 class="title-font"><span class="gradient">Ошибка 404!</span></h1>
+        <p class="txt">Неа, этой страницы не существует!</p>
+        <h2 class="title-font"><a href="index.html">[ На главную страницу ]</a></h2>
+        <h2 class="title-font"><a href="javascript:history.go(-1)">[ Назад ]</a></h2>
+    </div>
+    <div class="footer">
+        <h1 class="title-font">SGR Studios<br>2021 - <span class="year"></span></h1>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelectorAll('.year').forEach(element => {
+        element.textContent = new Date().getFullYear();
+    });
+</script>
