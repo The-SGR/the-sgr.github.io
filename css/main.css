@@ -154,6 +154,12 @@ a:hover:after {
     }
 }
 
+@media (max-width: 520px) {
+    .newData {
+        display: none;
+    }
+}
+
 /*.transparent {
     color: rgba(255, 255, 255, 0.0);
 }*/
