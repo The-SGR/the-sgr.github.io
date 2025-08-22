@@ -31,15 +31,15 @@
             <h1 class="title-font"><a href="index.html">SGR Studios</a><span class="newData">2021 - <span class="year"></span></span></h1>
             <ul class="header_list">
                 <li><h2 class="title-font"><a href="about.html">About</a></h2></li>
-                <li><h2 class="title-font"><a href="maiclicker.html">Clicker</a></h2></li>
+                <li><h2 class="title-font"><a href="clicker.html">Clicker</a></h2></li>
             </ul>
         </div>
     </header>
     <div id="window-404">
-        <h1 class="title-font"><span class="gradient">Ошибка 404!</span></h1>
-        <p class="txt">Неа, этой страницы не существует!</p>
-        <h2 class="title-font"><a href="index.html">[ На главную страницу ]</a></h2>
-        <h2 class="title-font"><a href="javascript:history.go(-1)">[ Назад ]</a></h2>
+        <h1 class="title-font"><span class="gradient" data-i18n="error_404">Ошибка 404!</span></h1>
+        <p class="txt" data-i18n="txt_404">Неа, этой страницы не существует!</p>
+        <h2 class="title-font" data-i18n="main_page_404"><a href="index.html">[ На главную страницу ]</a></h2>
+        <h2 class="title-font" data-i18n="back_404"><a href="javascript:history.go(-1)">[ Назад ]</a></h2>
     </div>
     <div class="footer">
         <h1 class="title-font">SGR Studios<br>2021 - <span class="year"></span></h1>
@@ -51,3 +51,4 @@
         element.textContent = new Date().getFullYear();
     });
 </script>
+<script src="js/locale.js"></script>
