@@ -21,6 +21,7 @@ const translations = {
         txt_404: "Nope, this page doesn't exist!",
         main_page_404: "[ Main Page ]",
         back_404: "[ Back ]",
+        reset_clicks: "Reset Clicks",
     },
     ru: {
         welcome: "Добро пожаловать!",
@@ -44,6 +45,7 @@ const translations = {
         txt_404: "Неа, этой страницы не существует!",
         main_page_404: "[ На главную страницу ]",
         back_404: "[ Назад ]",
+        reset_clicks: "Сбросить клики",
     }
 };
 

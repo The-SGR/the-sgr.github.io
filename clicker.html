@@ -37,9 +37,12 @@
         </div>
     </header>
     <div id="clicker">
-        <img src="res/niko.png" alt="niko" id="cBtn" width="200" height="200">
+        <img src="res/niko.png" alt="niko" id="cBtn" width="200" height="200" draggable="false">
         <div id="window-clicks">
-            <div id="main-text"><h4 class="title-font"><span data-i18n="clicks">Клики: </span><span id="counter">0</span></h4></div>
+            <div id="main-text">
+                <h4 class="title-font"><span data-i18n="clicks">Клики: </span><span id="counter">0</span></h4>
+                <button id="resetBtn" data-i18n="reset_clicks"></button>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -48,8 +51,42 @@
 </body>
 </html>
 <style>
+    #resetBtn {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 650;
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 0;
+        width: 145px;
+        text-decoration: none;
+        color: #ff0000;
+        border: 0;
+        outline: none;
+        background-color: transparent;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        background-size: 0 2px;
+        transition: background-size .10s;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    #resetBtn:hover {
+        transition: 500ms all;
+        color: #ff0000;
+        background-size: 100% 2px;
+    }
+
+    #resetBtn:not(:hover) {
+        transition: 500ms all;
+        color: #fff;
+        background-size: 0 2px;
+    }
+
     h4 {
         margin: 0;
+        font-size: 25px;
     }
 
     #main-text {
