@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>SGR Studios | 404</title>
+    <title>SGR Studios | Utilities</title>
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/window-conf.css">
@@ -24,32 +24,33 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="res/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <h1 class="title-font"><a href="index.html">SGR Studios</a><span class="newData">2021 - <span class="year"></span></span></h1>
-            <ul class="header_list">
-                <li><button class="lang-toggle" data-lang="ru">EN</button></li>
-                <li><h2 class="title-font"><a href="about.html" data-i18n="about">About</a></h2></li>
-                <li><h2 class="title-font"><a href="util.html" data-i18n="util">Utilities</a></h2></li>
-            </ul>
-        </div>
+      <div class="header">
+        <h1 class="title-font"><a href="index.html">SGR Studios</a><span class="newData">2021 - <span class="year"></span></span></h1>
+        <ul class="header_list">
+          <li><button class="lang-toggle" data-lang="ru">EN</button></li>
+          <li><h2 class="title-font"><a href="about.html" data-i18n="about">About</a></h2></li>
+          <li><h2 class="title-font"><a href="util.html" data-i18n="util">Utilities</a></h2></li>
+        </ul>
+      </div>
     </header>
-    <div id="window-404">
-        <h1 class="title-font"><span class="gradient" data-i18n="error_404">Ошибка 404!</span></h1>
-        <p class="txt" data-i18n="txt_404">Неа, этой страницы не существует!</p>
-        <h2 class="title-font"><a href="index.html" data-i18n="main_page_404">[ На главную страницу ]</a></h2>
-        <h2 class="title-font"><a href="javascript:history.go(-1)" data-i18n="back_404">[ Назад ]</a></h2>
+    <div id="window-util">
+      <h1 class="title-font"><span class="gradient" data-i18n="util">Utilities</span></h1>
+      <p class="txt">
+        <a href="table.html" class="a-main" data-i18n="periodic_table_title">Periodic Table of the Elements</a><br>
+        <a href="clicker.html" class="a-main" data-i18n="clicker">Clicker</a>
+      </p>
     </div>
     <div class="footer">
-        <h1 class="title-font">SGR Studios<br>2021 - <span class="year"></span></h1>
+      <h1 class="title-font">SGR Studios<br>2021 - <span class="year"></span></h1>
     </div>
-</body>
+  </body>
 </html>
 <script>
-    document.querySelectorAll('.year').forEach(element => {
-        element.textContent = new Date().getFullYear();
-    });
+  document.querySelectorAll('.year').forEach(element => {
+    element.textContent = new Date().getFullYear();
+  });
 </script>
 <script src="js/locale.js"></script>

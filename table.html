@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SGR Studios</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/window-conf.css">
+    <link rel="stylesheet" href="css/periodic-table.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="res/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="res/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="res/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="res/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="res/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="res/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="res/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="res/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="res/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="res/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
+    <link rel="manifest" href="res/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="res/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="title-font"><a href="index.html">SGR Studios</a><span class="newData">2021 - <span class="year"></span></span></h1>
+            <ul class="header_list">
+                <li><button class="lang-toggle" data-lang="ru">EN</button></li>
+                <li><h2 class="title-font"><a href="about.html" data-i18n="about">About</a></h2></li>
+                <li><h2 class="title-font"><a href="util.html" data-i18n="util">Utilities</a></h2></li>
+            </ul>
+        </div>
+    </header>
+    <div id="div-table">
+        <h1 class="title"><span class="gradient" data-i18n="periodic_table_title">Periodic Table of the Elements</span></h1>
+        <table id="periodic-table-window">
+            <tbody>
+                <tr height="52">
+                    <td width="50" class="nonmetal" data-element="H">H</td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="noble_gas" id="He" data-element-name="Гелий (Helium)">He</td>
+                </tr>
+                <tr height="52">
+                    <td width="50" class="alkali_metal">Li</td>
+                    <td width="50" class="alkaline_earth_metal">Mg</td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="metalloid">B</td>
+                    <td width="50" class="nonmetal">C</td>
+                    <td width="50" class="nonmetal">N</td>
+                    <td width="50" class="nonmetal">O</td>
+                    <td width="50" class="halogen">F</td>
+                    <td width="50" class="noble_gas">Ne</td>
+                </tr>
+                <tr height="52">
+                    <td width="50" class="alkali_metal">Na</td>
+                    <td width="50" class="alkaline_earth_metal">Be</td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="metal">Al</td>
+                    <td width="50" class="metalloid">Si</td>
+                    <td width="50" class="nonmetal">P</td>
+                    <td width="50" class="nonmetal">S</td>
+                    <td width="50" class="halogen">Cl</td>
+                    <td width="50" class="noble_gas">Ar</td>
+                </tr>
+                <tr height="52">
+                    <td width="50" class="alkali_metal">K</td>
+                    <td width="50" class="alkaline_earth_metal">Ca</td>
+                    <td width="50" class="transition_metal">Sc</td>
+                    <td width="50" class="transition_metal">Ti</td>
+                    <td width="50" class="transition_metal">V</td>
+                    <td width="50" class="transition_metal">Cr</td>
+                    <td width="50" class="transition_metal">Mn</td>
+                    <td width="50" class="transition_metal">Fe</td>
+                    <td width="50" class="transition_metal">Co</td>
+                    <td width="50" class="transition_metal">Ni</td>
+                    <td width="50" class="transition_metal">Cu</td>
+                    <td width="50" class="transition_metal">Zn</td>
+                    <td width="50" class="metal">Ga</td>
+                    <td width="50" class="metalloid">Ge</td>
+                    <td width="50" class="metalloid">As</td>
+                    <td width="50" class="nonmetal">Se</td>
+                    <td width="50" class="halogen">Br</td>
+                    <td width="50" class="noble_gas">Kr</td>
+                </tr>
+                <tr height="52">
+                    <td width="50" class="alkali_metal">Rb</td>
+                    <td width="50" class="alkaline_earth_metal">Sr</td>
+                    <td width="50" class="transition_metal">Y</td>
+                    <td width="50" class="transition_metal">Zr</td>
+                    <td width="50" class="transition_metal">Nb</td>
+                    <td width="50" class="transition_metal">Mo</td>
+                    <td width="50" class="transition_metal">Te</td>
+                    <td width="50" class="transition_metal">Ru</td>
+                    <td width="50" class="transition_metal">Rh</td>
+                    <td width="50" class="transition_metal">Pd</td>
+                    <td width="50" class="transition_metal">Ag</td>
+                    <td width="50" class="transition_metal">Cd</td>
+                    <td width="50" class="metal">In</td>
+                    <td width="50" class="metal">Sn</td>
+                    <td width="50" class="metalloid">Sb</td>
+                    <td width="50" class="metalloid">Te</td>
+                    <td width="50" class="halogen">I</td>
+                    <td width="50" class="noble_gas">Xe</td>
+                </tr>
+                <tr height="52">
+                    <td width="50" class="alkali_metal">Cs</td>
+                    <td width="50" class="alkaline_earth_metal">Ba</td>
+                    <td width="50" class="lanthanide">La</td>
+                    <td width="50" class="transition_metal">Hf</td>
+                    <td width="50" class="transition_metal">Ta</td>
+                    <td width="50" class="transition_metal">W</td>
+                    <td width="50" class="transition_metal">Re</td>
+                    <td width="50" class="transition_metal">Os</td>
+                    <td width="50" class="transition_metal">Ir</td>
+                    <td width="50" class="transition_metal">Pt</td>
+                    <td width="50" class="transition_metal">Au</td>
+                    <td width="50" class="transition_metal">Hg</td>
+                    <td width="50" class="metal">Tl</td>
+                    <td width="50" class="metal">Pb</td>
+                    <td width="50" class="metal">Bi</td>
+                    <td width="50" class="metal">Po</td>
+                    <td width="50" class="halogen">At</td>
+                    <td width="50" class="noble_gas">Rn</td>
+                </tr>
+                <tr height="52">
+                    <td width="50" class="alkali_metal">Fr</td>
+                    <td width="50" class="alkaline_earth_metal">Ra</td>
+                    <td width="50" class="actinide">Ac</td>
+                    <td width="50" class="transition_metal">Rf</td>
+                    <td width="50" class="transition_metal">Db</td>
+                    <td width="50" class="transition_metal">Sg</td>
+                    <td width="50" class="transition_metal">Bh</td>
+                    <td width="50" class="transition_metal">Hs</td>
+                    <td width="50" class="transition_metal">Mt</td>
+                    <td width="50" class="transition_metal">Ds</td>
+                    <td width="50" class="transition_metal">Rg</td>
+                    <td width="50" class="transition_metal">Cn</td>
+                    <td width="50" class="metal">Nh</td>
+                    <td width="50" class="metal">Fl</td>
+                    <td width="50" class="metal">Mc</td>
+                    <td width="50" class="metal">Lv</td>
+                    <td width="50" class="halogen">Ts</td>
+                    <td width="50" class="noble_gas">Og</td>
+                </tr>
+                <tr height="52">
+
+                </tr>
+                <tr height="52">
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="lanthanide">Ce</td>
+                    <td width="50" class="lanthanide">Pr</td>
+                    <td width="50" class="lanthanide">Nd</td>
+                    <td width="50" class="lanthanide">Pm</td>
+                    <td width="50" class="lanthanide">Sm</td>
+                    <td width="50" class="lanthanide">Eu</td>
+                    <td width="50" class="lanthanide">Gd</td>
+                    <td width="50" class="lanthanide">Tb</td>
+                    <td width="50" class="lanthanide">Dy</td>
+                    <td width="50" class="lanthanide">Ho</td>
+                    <td width="50" class="lanthanide">Er</td>
+                    <td width="50" class="lanthanide">Tm</td>
+                    <td width="50" class="lanthanide">Yb</td>
+                    <td width="50" class="lanthanide">Lu</td>
+                </tr>
+                <tr height="52">
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="empty_element"></td>
+                    <td width="50" class="actinide">Th</td>
+                    <td width="50" class="actinide">Pa</td>
+                    <td width="50" class="actinide">U</td>
+                    <td width="50" class="actinide">Np</td>
+                    <td width="50" class="actinide">Pu</td>
+                    <td width="50" class="actinide">Am</td>
+                    <td width="50" class="actinide">Cm</td>
+                    <td width="50" class="actinide">Bk</td>
+                    <td width="50" class="actinide">Cf</td>
+                    <td width="50" class="actinide">Es</td>
+                    <td width="50" class="actinide">Fm</td>
+                    <td width="50" class="actinide">Md</td>
+                    <td width="50" class="actinide">No</td>
+                    <td width="50" class="actinide">Lr</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 class="title"><span class="gradient" id="element_name">Select Element</span></h1>
+    </div>
+    <div class="footer">
+        <h1 class="title-font">SGR Studios<br>2021 - <span class="year"></span></h1>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelectorAll('.year').forEach(element => {
+        element.textContent = new Date().getFullYear();
+    });
+</script>
+<script src="js/locale.js"></script>
+<script src="js/periodic-table.js"></script>

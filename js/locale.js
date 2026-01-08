@@ -22,6 +22,8 @@ const translations = {
         main_page_404: "[ Main Page ]",
         back_404: "[ Back ]",
         reset_clicks: "Reset Clicks",
+        periodic_table_title: "Periodic Table of the Elements",
+        util: "Utilities",
     },
     ru: {
         welcome: "Добро пожаловать!",
@@ -46,6 +48,8 @@ const translations = {
         main_page_404: "[ На главную страницу ]",
         back_404: "[ Назад ]",
         reset_clicks: "Сбросить клики",
+        periodic_table_title: "Периодическая таблица Д.И. Менделеева",
+        util: "Утилиты",
     }
 };
 
@@ -66,6 +70,10 @@ function applyTranslation(lang) {
             el.textContent = translations[lang][key];
         }
     });
+
+    if (translations[lang] && translations[lang]['page_title']) {
+        document.title = translations[lang]['page_title'];
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
