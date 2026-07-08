@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Industrial Dawn</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/window-conf.css">
+    <link rel="stylesheet" href="css/industrial-dawn.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="res/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="res/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="res/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="res/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="res/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="res/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="res/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="res/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="res/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="res/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
+    <link rel="manifest" href="res/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="res/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header>
+    <div class="header">
+        <h1 class="title-font"><a href="index.html">SGR Studios</a><span class="newData">2021 - <span class="year"></span></span></h1>
+        <ul class="header_list">
+            <li><button class="lang-toggle" data-lang="ru">EN</button></li>
+            <li><h2 class="title-font"><a href="about.html" data-i18n="about">About</a></h2></li>
+            <li><h2 class="title-font"><a href="util.html" data-i18n="util">Utilities</a></h2></li>
+        </ul>
+    </div>
+</header>
+<div id="window-id">
+    <h1 class="title-font" id="id-soon"><span data-i18n="until_id">До открытия </span><span class="gradient" id="id-title">Industrial Dawn</span></h1>
+    <h1 class="title-font" id="id-now"><a href="https://discord.gg/industrialdawn" target="_blank" data-i18n="id_open">Сервер открыт! (нажми)</a></h1>
+    <div class="countdown">
+        <div class="time">
+            <h2 id="days">0</h2>
+            <p data-i18n="days_cd">Дней</p>
+        </div>
+        <div class="time">
+            <h2 id="hours">0</h2>
+            <p data-i18n="hours_cd">Часов</p>
+        </div>
+        <div class="time">
+            <h2 id="minutes">0</h2>
+            <p data-i18n="minutes_cd">Минут</p>
+        </div>
+        <div class="time">
+            <h2 id="seconds">0</h2>
+            <p data-i18n="seconds_cd">Секунд</p>
+        </div>
+    </div>
+    <audio autoplay="autoplay" loop controls>
+        <source src="res/countdown.flac" type="audio/ogg">
+    </audio>
+</div>
+<div class="footer">
+    <h1 class="title-font">SGR Studios<br>2021 - <span class="year"></span></h1>
+</div>
+</body>
+</html>
+<script>
+    document.querySelectorAll('.year').forEach(element => {
+        element.textContent = new Date().getFullYear();
+    });
+</script>
+<script src="js/locale.js"></script>
+<script src="js/countdown.js"></script>

@@ -24,6 +24,13 @@ const translations = {
         reset_clicks: "Reset Clicks",
         periodic_table_title: "Periodic Table of the Elements",
         util: "Utilities",
+        txt_main_4_part: "But now, check out ",
+        days_cd: "Days",
+        hours_cd: "Hours",
+        minutes_cd: "Minutes",
+        seconds_cd: "Seconds",
+        until_id: "Until ",
+        id_open: "Server is open! (press me)"
     },
     ru: {
         welcome: "Добро пожаловать!",
@@ -50,6 +57,13 @@ const translations = {
         reset_clicks: "Сбросить клики",
         periodic_table_title: "Периодическая таблица Д.И. Менделеева",
         util: "Утилиты",
+        txt_main_4_part: "а пока, загляните на ",
+        days_cd: "Дней",
+        hours_cd: "Часов",
+        minutes_cd: "Минут",
+        seconds_cd: "Секунд",
+        until_id: "До открытия ",
+        id_open: "Сервер открыт! (нажми)"
     }
 };
 
